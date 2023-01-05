@@ -1,0 +1,43 @@
+body {
+    display: block;
+    margin: 0;
+  }
+
+  nav{
+    display: flex;
+    justify-content: right;
+    gap: 3rem;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    text-decoration-style: none;
+  }
+
+  header {
+    display: flex;
+    background: rgb(188, 231, 234);
+    margin: 0;
+  }
+
+  img{
+    width: 15%;
+  }
+
+  
+  main {
+    background: coral;
+    width: 760px;
+    margin: auto;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  
+  footer {
+    background: rgb(188, 231, 234);
+    padding: 2rem;
+    text-align: center;
+    
+  }
+  
+
