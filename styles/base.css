@@ -1,75 +1,82 @@
 
-    body {
-      margin: 0;
-      font-family: 'Trebuchet MS';
-    }
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS';
+  }
   
-    nav{
-      display: flex;
-        justify-content: right;
-        align-items: center;
-        gap: 3rem;
-        font-family: 'Trebuchet MS';
-    }
 
-    .name{
-      font-size: 100%;
-      align-self: center;
-      text-align: center;
-    }
-  
-    header {
-      display: flex;
-      width: 100%;
-      background: rgb(188, 231, 234);
-      margin: 0;
-      font-weight: 700;
-      color: black;
-      
-    }
-  
-    img{
-      width: 20%;
-      margin-left: 20px;
-      box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
-      
-    }
-    
-    .main-title{
-      font-size: large;
-      text-align: center;
-    }
+nav{
+  display:grid;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-    main {
-      width: 100%;
-      margin: auto;
-    }
-    
-    .card{
-      width: 100%;
-      text-align: center;
-    }
+
+header {
+  display: flex;
+  background: rgb(188, 231, 234);
+  margin: 0;
+  font-weight: 700;
+  color: black;
+}
+
+h1{
+  margin-left: -10%;
+}
+
+.name{
+  font-size: 150%;
+}
+
+img{
+  width: 15%;
+  height: 50%;
+  margin-left: 20px;
+  margin-right: 20%;
+  box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
   
-    ul{
-      list-style-type: none;
-      text-align: left;
-    }
-    
-    footer {
-      width: fit-content;
-      background: rgb(188, 231, 234);
-      padding: 1rem;
-      text-align: center;
-      font-size: small;
-      
-    }
-    
-    h3{
-      background-color: rgb(247, 199, 199);
-      box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
-      padding: 5px;
-    }
-  
-  
+}
+
+main{
+  display: block;
+  margin: auto;
+}
+
+.main-title{
+  font-size: 130%;
+  text-align: center;
+}
+
+.card1{ 
+  text-align: center;
+}
+
+.card2{
+  text-align: center;
+}
+
+.card3{
+  text-align: center;
+}
+
+
+ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  background: rgb(188, 231, 234);
+  padding: 1rem;
+  text-align: center;
+}
+
+h3{
+  background-color: rgb(247, 199, 199);
+  box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
+  padding: 5px;
+}
 
 
