@@ -10,10 +10,9 @@
     <link rel="icon" href="favicon.ico">
     <title>"WDD 230 - Portal - Jacqueline Bento"</title>
     <meta name="author" content="Jacqueline Bento">
-    <meta
-    name="description"
-    content="Jacqueline Bento's course assignment portal destined to post assingments for WDD230 class.">
-    <meta property="og:title" content="Jacqueline Bento's course portal" >
+    <meta name="description" content="Jacqueline Bento's course assignment portal destined to post assingments for WDD230 class.">
+    <meta name="image" content="https://www.truteam.com/wp-content/uploads/2020/11/Orange-Park_Florida_TruTeam_Branch_Banner.jpg">
+    <meta property="og:title" content="WDD 230 - Portal - Jacqueline Bento" >
     <meta property="og:type" content="website" >
     <meta property="og:url" content="https://jacquebento.github.io/1_WDD230/" >
     <meta property="og:image" content="https://www.truteam.com/wp-content/uploads/2020/11/Orange-Park_Florida_TruTeam_Branch_Banner.jpg" >    
@@ -22,51 +21,64 @@
 
 <body>
     
-    <nav> 
-        
-        <a href="https://www.byui.edu/">BYU-Idaho</a>
-        <a href="https://www.linkedin.com/in/jacquelinebento/">LinkedIn</a>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
-        
-    </nav>
+    <nav class="navbar">
 
-    <header>
-        <img src="images/me.png" alt="My picture">
-        <h1 class="name">Jacqueline Bento</h1>
-    </header>
-
-    <main>
-        <h2 class="main-title">WDD 230: Course Activity Portal</h2>
-        <section class="card1">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>Week 01:<a href="week01/holygrail.html">Holy Grail</a><a href="week01/media-query.html">   Media Query
-                </a></li>
-                <li>Week 02:<a href="https://codepen.io/jacquelinebento/pen/ZEjebRM">Code Pen</a><a href="week02/design.html"> Design Principles
-                </a><a href="week02/bom.html"> DOM Manipulation
-                </a></li>
-                <li>Week 03:<a></a></li>
-                <li>Week 04:<a></a></li>
-                <li>Week 05:<a></a></li>
-                <li>Week 06:<a></a></li>
-            </ul>
-        </section>
-        <section class="card2">
-            <h3>Project</h3>
-            <a href="week01/chamber-siteplan.html">Chamber of Commerce Site Plan</a>
-            <a></a>
-        </section>
-        <section class="card3">
-            <h3>Information</h3>
-            <a></a>
-        </section>
-        
-
-    </main>
-    <footer>
-        <p><span>&copy;</span> <span id="y"></span> - Jacqueline Bento - Florida</p>
-        <p class="highlight" id="lastModified"></p>
-    </footer>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.linkedin.com/in/jacquelinebento/" class="nav-link">LinkedIn</a>
+            </li>
+            <button class="darkButton">Dark Mode ☑️</button>
+        </ul>
+    
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+        <header>
+            <img src="images/me.png" alt="My picture">
+            <h1 class="name">Jacqueline Bento</h1>
+        </header>
+    
+        <main>
+            <h2 class="main-title">WDD 230: Course Activity Portal</h2>
+            <section class="card1">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>Week 01:<a class="link" href="week01/holygrail.html">Holy Grail</a><a class="link" href="week01/media-query.html">   Media Query
+                    </a></li>
+                    <li>Week 02:<a class="link" href="https://codepen.io/jacquelinebento/pen/ZEjebRM">Code Pen</a><a class="link" href="week02/design.html"> Design Principles
+                    </a><a class="link" href="week02/bom.html"> DOM Manipulation
+                    </a></li>
+                    <li>Week 03:<a></a></li>
+                    <li>Week 04:<a></a></li>
+                    <li>Week 05:<a></a></li>
+                    <li>Week 06:<a></a></li>
+                </ul>
+            </section>
+            <section class="card2">
+                <h3>Project</h3>
+                <a class="link" href="week01/chamber-siteplan.html">Chamber of Commerce Site Plan</a>
+                <a></a>
+            </section>
+            <section class="card3">
+                <h3>Information</h3>
+                <a></a>
+            </section>
+            
+    
+        </main>
+        <footer>
+            <p><span>&copy;</span> <span id="y"></span> - Jacqueline Bento - Florida</p>
+            <p class="highlight" id="lastModified"></p>
+        </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hambMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>

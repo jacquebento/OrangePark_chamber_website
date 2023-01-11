@@ -1,32 +1,94 @@
 
-body {
+*{
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Trebuchet MS';
-  }
-  
-
-nav{
-  display:grid;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
 }
 
+li{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.link{
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: dodgerblue;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.darkButton{
+  border: none;
+  transition: 0.7s ease;
+  background-color: "yellow";
+}
+
+.darkButton:hover{
+  color: dodgerblue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
 
 header {
   display: flex;
   background: rgb(188, 231, 234);
-  margin: 0;
-  font-weight: 700;
   color: black;
+  font-family: 'Trebuchet MS';
+  }
+
+.name{
+  margin-left: -150px;
 }
 
 h1{
-  margin-left: -10%;
-}
-
-.name{
-  font-size: 150%;
+  margin: auto;
 }
 
 img{
@@ -41,28 +103,32 @@ img{
 main{
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 .main-title{
   font-size: 130%;
   text-align: center;
+  margin-top: 10px;
 }
 
 .card1{ 
   text-align: center;
+  margin-top: 10px;
 }
 
 .card2{
   text-align: center;
+  margin-top: 10px;
 }
 
 .card3{
   text-align: center;
+  margin-top: 10px;
 }
 
-
 ul{
-  list-style-type: none;
+  list-style-type: none; 
   text-align: left;
 }
 
@@ -71,12 +137,43 @@ footer {
   background: rgb(188, 231, 234);
   padding: 1rem;
   text-align: center;
+  margin-top: 10px;
 }
 
 h3{
   background-color: rgb(247, 199, 199);
   box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
   padding: 5px;
+  margin-bottom: 15px;
+}
+
+.hamburger{
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  display: none;
+}
+
+.nav-item{
+  margin: 20px;
+}
+
+.nav-menu.active{
+  display: contents;
+  justify-content: space-between;
 }
 
 
