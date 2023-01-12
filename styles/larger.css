@@ -6,6 +6,10 @@ a{
   text-decoration: none;
 }
 
+header h1{
+  margin: 3% 8%;
+}
+
 img{
   width: 15%;
   height: 50%;

@@ -78,18 +78,13 @@ a{
 
 header {
   display: flex;
+  margin: 2% 1%;
   background: rgb(188, 231, 234);
   color: black;
   font-family: 'Trebuchet MS';
+  text-align: center;
   }
 
-.name{
-  margin-left: -150px;
-}
-
-h1{
-  margin: auto;
-}
 
 img{
   width: 15%;
@@ -109,22 +104,21 @@ main{
 .main-title{
   font-size: 130%;
   text-align: center;
-  margin-top: 10px;
 }
 
 .card1{ 
   text-align: center;
-  margin-top: 10px;
+  padding: 20px;
 }
 
 .card2{
   text-align: center;
-  margin-top: 10px;
+  padding: 20px;
 }
 
 .card3{
   text-align: center;
-  margin-top: 10px;
+  
 }
 
 ul{
@@ -133,11 +127,11 @@ ul{
 }
 
 footer {
-  width: 100%;
+  
   background: rgb(188, 231, 234);
   padding: 1rem;
   text-align: center;
-  margin-top: 10px;
+  margin: 2% 1%;
 }
 
 h3{
