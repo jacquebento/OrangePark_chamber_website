@@ -41,21 +41,39 @@
         </nav>
     
         <header>
-            <img src="images/me.png" alt="My picture">
+            <img src="images/me.png" alt="My picture" loading="lazy" width="100" height="auto">
             <h1 class="name">Jacqueline Bento</h1>
         </header>
     
         <main>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 960px)" srcset= "images/temple1.webp" width="300" height="auto">
+                     <source media="(min-width: 400px)" srcset= "images/temple_2.webp" width="300" height="auto">
+
+                    <img class="temple" src="images/temple1.webp" alt="Idaho Falls Temple" loading="lazy" width="300" height="auto">
+                </picture>
+                <div class="herolabel">
+                    <p>Idaho Falls Temple</p>
+                </div>
+            </div>
             <h2 class="main-title">WDD 230: Course Activity Portal</h2>
             <section class="card1">
                 <h3>Learning Activities</h3>
                 <ul>
-                    <li>Week 01:<a class="link" href="week01/holygrail.html">Holy Grail</a><a class="link" href="week01/media-query.html">   Media Query
+                    <li>Week 01:<a class="link" href="week01/holygrail.html">Holy Grail</a>
+                        <a class="link" href="week01/media-query.html">   Media Query
                     </a></li>
-                    <li>Week 02:<a class="link" href="https://codepen.io/jacquelinebento/pen/ZEjebRM">Code Pen</a><a class="link" href="week02/design.html"> Design Principles
-                    </a><a class="link" href="week02/bom.html"> DOM Manipulation
-                    </a></li>
-                    <li>Week 03:<a></a></li>
+                    <li>Week 02:<a class="link" href="https://codepen.io/jacquelinebento/pen/ZEjebRM">Code Pen</a>
+                        <a class="link" href="week02/design.html"> Design Principles</a>
+                        <a class="link" href="week02/bom.html"> DOM Manipulation</a>
+                    </li>
+                    <li>Week 03:
+                        <a class="link" href="week03/landscape.webp"> WebP</a>
+                        <a class="link" href="week03/lazyload.html"> Lazy Loading</a>
+                        <a class="link" href="https://codepen.io/jacquelinebento/pen/gOjGoRO">Responsive Images</a>
+                        <a class="link" href="week03/bom.html"> localStorage</a>
+                    </li>
                     <li>Week 04:<a></a></li>
                     <li>Week 05:<a></a></li>
                     <li>Week 06:<a></a></li>
@@ -70,8 +88,13 @@
             </section>
             <section class="card3">
                 <h3>Information</h3>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
                 <a></a>
             </section>
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55190.62696578877!2d-81.74038129520508!3d30.16816037743684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5c5e375d92541%3A0x5e67dc23a35cd9f5!2sOrange%20Park%2C%20Fl%C3%B3rida%2032073!5e0!3m2!1spt-BR!2sus!4v1674072448981!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            
             
     
         </main>
@@ -82,5 +105,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hambMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

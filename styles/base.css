@@ -95,10 +95,15 @@ img{
   
 }
 
-main{
-  display: block;
+.main{
+  display: none;
   margin: auto;
   width: 100%;
+}
+
+.temple{
+  width: 100%;
+  height: auto;
 }
 
 .main-title{
@@ -119,6 +124,10 @@ main{
 .card3{
   text-align: center;
   
+}
+
+.map{
+  margin: auto auto;
 }
 
 ul{
