@@ -1,4 +1,12 @@
 
+:root{
+  --hov: dodgerblue;
+  --back1: rgb(188, 231, 234);
+  --back2: rgb(247, 199, 199);
+  --shadow: rgba(148, 148, 184, 0.2);
+}
+
+
 *{
   padding: 0;
   margin: 0;
@@ -21,7 +29,7 @@ a{
 }
 
 .link:hover{
-  color: dodgerblue;
+  color: var(--hov);
 }
 
 .navbar{
@@ -58,7 +66,7 @@ a{
 }
 
 .darkButton:hover{
-  color: dodgerblue;
+  color: var(--hov);
 }
 
 .hamburger{
@@ -79,9 +87,8 @@ a{
 header {
   display: flex;
   margin: 2% 1%;
-  background: rgb(188, 231, 234);
+  background: var(--back1);
   color: black;
-  font-family: 'Trebuchet MS';
   text-align: center;
   }
 
@@ -91,7 +98,7 @@ img{
   height: 50%;
   margin-left: 20px;
   margin-right: 20%;
-  box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
+  box-shadow: 5px 5px 1px 0.5px var(--shadow);
   
 }
 
@@ -137,15 +144,15 @@ ul{
 
 footer {
   
-  background: rgb(188, 231, 234);
+  background: var(--back1);
   padding: 1rem;
   text-align: center;
   margin: 2% 1%;
 }
 
 h3{
-  background-color: rgb(247, 199, 199);
-  box-shadow: 5px 5px 1px 0.5px rgba(148, 148, 184, 0.2);
+  background-color: var(--back2);
+  box-shadow: 5px 5px 1px 0.5px var(--shadow);
   padding: 5px;
   margin-bottom: 15px;
 }
@@ -180,3 +187,93 @@ h3{
 }
 
 
+#formmessage {
+	display: none;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgb(188, 231, 234);
+	color: black;
+	padding: 0.5rem;
+  margin-left: 50px;
+}
+
+.contact {
+	margin: auto auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	width: 600px;
+	background-color: #eee;
+}
+
+hr {
+  height: 1px;
+  margin: 10px 0;
+  background: black;
+}
+
+form {
+	display: grid;
+	grid-gap: 0.35rem;
+	grid-template-columns: 1fr 1fr;
+	width: 425px;
+	align-items: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+label, input, textarea, select, button {
+	padding: 0.35rem;
+}
+
+label {
+	text-align: right;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-color: var(--back1);
+}
+
+#formmessage, button {
+	grid-column: 1/3;
+}
+
+button:hover{
+  background-color: var(--back1);
+}
+
+button{
+  margin-left: 215px;
+}
+
+.ratevalue{
+  margin-left: 13px;
+}
+
+#table{
+  display: none;
+  margin: 20px auto;
+	padding: 0.5rem;
+	width: 300px;
+	border-collapse: collapse;
+}
+
+tr:first-child th {
+	background-color: var(--back1);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+
+th {
+	background-color: #eee;
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
