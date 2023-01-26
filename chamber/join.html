@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Park Chamber of Commerce</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="https://assets.betalabs.net/production/laranjadeli/images/stores/1/fav-laranja.png">
+
+    <meta name="author" content="Jacqueline Bento">
+    <meta name="description" content="Orange Park Chamber of Commerce">
+    <meta name="image" content="https://commons.wikimedia.org/wiki/File:Orange_Park_FL_city_hall10.jpg">
+    <meta property="og:title" content="Orange Park Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <!-- <meta property="og:url" content="https://jacquebento.github.io/1_WDD230/" > -->
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Orange_Park_FL_city_hall10.jpg" >
+
+</head>
+<body>
+    <header>
+        
+        <div class="social">
+            <img class="logo" src="images/logo3.png" alt="logo orange park chamber">
+            <img class="facelogo" src="images/face_logo.png" alt="facebook icon">
+            <img class="instalogo" src="images/insta_logo.png" alt="instagram icon">
+        </div>
+    
+        <nav class="navbar">
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="discover.html" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="join.html" class="nav-link">Join</a>
+                </li>
+                <!-- <button class="darkButton">Dark Mode ☑️</button> -->
+            </ul>
+        
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+    </header>
+
+
+    <main>
+        <section class="joinForm">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>
+                        <label class="top">Title <input type="text" name="title" pattern="^([A-Za-z0-9- ]){7,}$" title="This field only accepts alpha characters, hyphens, and spaces with a minimum of seven characters" placeholder="Your business position"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Business Name* <input type="text" name="bname" placeholder="Your business name" required></label>
+                        <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+                        <label class="top">Membership Level
+                            <select id="membership" name="subject">
+                                <option value="">Please Select</option>
+                            <option value="np">Non Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="golden">Golden Membership</option>
+                            </select>
+                        </label>
+                        <label class="top" name="bdescription" placeholder="Your business description">Business description<textarea name="description"  rows="6" cols="35" id="description"></textarea> ></label>
+                        <label> <input class="date" type="hidden" name="date" value=""></label>
+                        <p class="test"></p>
+                </fieldset>
+    
+                <input type="submit" value="Submit" class="submitBtn">
+    
+            </form>
+    
+            <section class="benefits">
+
+                <div class="genDescription">
+                    <h1>Memberships</h1>
+                        <p>We have 4 levels of memberships with diferent benefits and fees. <br>
+                             Please check out the details of each in the membership selection. </p>
+                        
+                    </div>
+    
+                <div class="npDescription">
+                    <h1>Non Profit Membership Benefits</h1>
+                    <div class="insidebox">
+                        <p>This Membership is for non profit organizations and there is no fee.</p>
+                        <p>It includes the benefits of the Silver Membership.</p>
+                    </div>
+                    
+                </div>
+                <div class="bronzeDescription">
+                    <h1>Bronze Membership Benefits</h1>
+                    <div class="insidebox">
+                        <p>Training <br>
+                            Participation in Special Events
+                        </p>
+                        <p>Fee: $15 monthly</p>
+                    </div>
+                </div>
+                <div class="silverDescription">
+                    <h1>Silver Membership Benefits</h1>
+                    <div class="insidebox">
+                        <p>Training <br>
+                            Participation in Special Event<br>
+                            Discounts in chamber's venues
+                        </p>
+                        <p>Fee: $20 monthly</p>
+                    </div>
+                </div>
+                <div class="goldenDescription">
+                    <h1>Golden Membership Benefits</h1>
+                    <div class="insidebox">
+                        <p>Training <br>
+                            Participation in Special Event<br>
+                            Discounts in chamber's venues<br>
+                            Advertising in the chamber's website
+                        </p>
+                        <p>Fee: $25 monthly</p>
+                    </div>
+                </div>
+               
+            </section>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <h2>Orange Park Chamber of Commerce</h2>
+        <p>2000 Park Ave APT 100, Orange Park, FL <br>
+        999-999-9999</p>
+        <p><span>&copy;</span> <span id="y"></span> - Jacqueline Bento - Florida  ▪ WDD 230 Project ▪ <span id="lastModified"></span> </p>
+    </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/darkMode.js"></script>
+  <script src="scripts/hambMenu.js"></script>  
+  <script src="scripts/memberships.js"></script>
+</body>
+</html>
