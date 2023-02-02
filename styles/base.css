@@ -129,12 +129,19 @@ img{
 }
 
 .card3{
-  text-align: center;
-  
+  display: grid;
+  text-align: center;  
+  margin-bottom: 30px;
+}
+
+#weather-icon{
+  margin: auto auto;
+  width: 20%;
+  height: auto;
 }
 
 .map{
-  margin: auto auto;
+  margin-top: 70px;
 }
 
 ul{
@@ -276,4 +283,15 @@ th {
 
 td {
 	text-align: center;
+}
+
+#weatherCard{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+#weather-icon{
+  grid-column: 2/3;
+  width: 30%;
 }
