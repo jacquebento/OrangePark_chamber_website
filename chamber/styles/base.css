@@ -3,17 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
+
 :root{
     --back1: #9fe2c6;
     --back2: #cbf0e1;
+    --fontcolor: rgb(15, 62, 15);
     --highlight: #eba74e;
     --font1: 'Josefin Sans', sans-serif;
-    --font2: 'Poppins', sans-serif;
-
+    --font2: 'Poppins', sans-serif
 }
+
 header{
     display: block;
-    padding: 15px;
+    width: 100%;
     background-color: var(--back1);
     font-family: var(--font1);
 }
@@ -110,9 +113,13 @@ li{
     justify-content: space-between;
   }
 
+  #hero{
+    display: block;
+  }
   
-  #hero-img{
+#hero-img{
     width: 100%;
+    margin-top: 50px;
     grid-column: 1/5;
     grid-row: 1/4;
 }
@@ -121,18 +128,29 @@ li{
 main{
   display: block;
 }
+.b{
+  display: none;
+  width: 99%;
+  background-color: var(--highlight);
+  margin-top: -5px;
+}
+
+.b h2{
+  font-weight: 200;
+}
 
   .join{
+    margin-top: -80px;
     background-color: var(--back1);
     text-decoration: none;
     font-family: var(--font1);
     font-weight: 900;
     font-size: 16px;
-    padding: 10px 30px;
+    padding: 10px 30px 10px 30px;
     border-radius: 5px;
     color: black;
     box-shadow: 6px 6px 10px #3d3d3b;
-    
+    z-index: 0;
 }
   
 #events, #weather{
@@ -143,8 +161,17 @@ main{
   margin: 5px 5px;
 } 
 
-#events{
-  margin-top: 30px;
+#events h3{
+  position: absolute;
+  margin-left: 20px;
+  color: var(--fontcolor);
+  font-family: var(--font1);
+  font-size: larger;
+  font-weight: 700;
+}
+
+#events p{
+  margin-left: 20px;
 }
 
 h1{
@@ -163,58 +190,69 @@ p{
 
 hr {
   height: 2px;
-  margin: -15px 0;
+  margin: 0 0;
   background: var(--highlight);
+}
+
+#weatherCard{
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px;
+}
+
+#weatherCard p{
+  font-family: var(--font1);
+  font-size: 30px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 80px;
+}
+
+#weatherCard figcaption{
+  text-transform: capitalize;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-left: 90px;
+}
+
+#weather-icon{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin-left: 20px;
+}
+
+.day1, .day2, .day3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#day1-caption, #day2-caption, #day3-caption{
+  text-transform: capitalize;
+}
+
+#day1-temp, #day2-temp, #day3-temp{
+  margin-left: 30px;
 }
 
 .insidebox{
   background-color: white;
-  margin-top: 10px;
+  height: auto;
   padding: 10px;
-  height: 190px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-#spotlights{
-  display: block;
-  font-family: 'Josefin Sans', sans-serif;
+
+.members{
+  margin-top: 20px;
+  justify-self: center;
 }
-
-.card1{
-  grid-column: 1/2;
-  background-color: var(--back2);
-  padding: 20px;
-  border-radius: 15px;
-  margin: 10px 10px;
-  box-shadow: 6px 6px 10px #3d3d3b;
-}
-
-.card2{
-  grid-column: 2/3;
-  background-color: var(--back2);
-  padding: 20px;
-  border-radius: 15px;
-  margin: 10px 10px;
-  box-shadow: 6px 6px 10px #3d3d3b;
-}
-
-.card3{
-  grid-column: 3/4;
-  background-color: var(--back2);
-  padding: 20px;
-  border-radius: 15px;
-  margin: 10px 10px;
-  box-shadow: 6px 6px 10px #3d3d3b;
-}
-
-
 
 footer {
   background: var(--back1);
   padding: 0.5rem;
   text-align: center;
-  margin: 2% 1%;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -346,21 +384,25 @@ form label.top input:required:valid{
 
 /* directory page */
 
+.directory{
+  display: block;
+}
+
+.toggle{
+  display: flex;
+  margin: 20px 40%;
+}
 
 #grid, #list{
   width: 100px;
+  margin-left: 20px;
   background-color: var(--back2);
   font-family: var(--font1);
   font-weight: 900;
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 10px;
   border-radius: 1rem;
   border-color:  var(--back2);
-  margin: 20px 50%;
-}
-
-#cards{
-  display: block;
 }
 
 .members{
@@ -396,3 +438,24 @@ h3 {
   height: auto;
 }
 
+.directory section{
+  margin: 1em auto;
+  max-width: 350px;
+  width: 100%;
+}
+
+.list section{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  text-align: left;
+  font-size: small;
+  
+}
+.list section:nth-child(even){
+  background-color: var(--back2);
+}
+.list section img{
+  display: none;
+}
