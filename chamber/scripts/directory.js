@@ -1,7 +1,7 @@
 const url = 'https://jacquebento.github.io/1_WDD230/chamber/data/members.json';
 const giturl = "https://jacquebento.github.io/1_WDD230/"
 
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('.cards');
 
 async function getMembersData(){
     const response = await fetch(url);
@@ -49,3 +49,4 @@ const displayMembers = (members) => {
   }
 
 getMembersData();
+
