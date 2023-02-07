@@ -22,7 +22,7 @@
     <header>
         
         <div class="social">
-            <img class="logo" src="images/logo3.png" alt="logo orange park chamber">
+            <a href="index.html"> <img class="logo" src="images/logo3.png" alt="logo orange park chamber"></a>
             <img class="facelogo" src="images/face_logo.png" alt="facebook icon">
             <img class="instalogo" src="images/insta_logo.png" alt="instagram icon">
         </div>
@@ -56,49 +56,79 @@
 
 
     <main>
+        
+        <div class="b">
+            <h2>Chamber of commerce meet and greet on Wednesday March 8th at 7:00 p.m</h2>
+        </div>
+
         <div id="hero">
             <img id="hero-img" src="images/hero.jpg" alt="Orange Park Town Hall">
             <a class="join" href="join.html">Join the Chamber</a>
         </div>
 
         <div id="events">
-            <h2>Events</h2>
-            
+            <h2>EVENTS</h2>
+            <hr>
             <div class="insidebox">
-                <p>Kids Fest - April 22-23, 2023</p>
-                    <br>
-                    <p>Upcoming CDD meetings:</p>
-                    <p>Double Branch (Phase 1) - Monday, 2/13/2023, 6:00PM.</p>
-                    <p>Middle Village (Phase 2) - Monday, 1/13/2023, 2:00PM.</p>
+                <h3> Kids Fest</h3>
+                <p> April 22-23 <br>
+                    More information on Facebook and Instagram</p>
+                <p> </p>
+                <br>
+                <h3>Small Business Breakfast presented by TD Bank</h3>
+                <p>April 30 at 8:00 am<br>
+                Tickets for this event on the TD bank website </p>
+                <br>
+                <h3>Upcoming CDD meeting</h3>
+                <p>Double Branch (Phase 1) - May 13 at 6:00pm</p>
+                <br>
+                <h3>Three Rivers Council Wake Up on the Westside Social</h3>
+                <p>May 13 at 6:00pm</p>
+                    
+
             </div>
         </div>
         <div id="weather">
-            <h2>Weather</h2>
-
+            <h2>WEATHER</h2>
+            <hr>
             <div class="insidebox">
-                <p>Information soon</p>
+                <div id="weatherCard">
+                    
+                    <p><span id="current-temp"></span></p>
+                    <figcaption></figcaption>
+                    <img id="weather-icon" src="" alt="">  
+                    
+                </div>
+                <hr>
+
+                <div id="forecast">
+                    
+                    <div class="day1">
+                        <p id="day1"></p>
+                        <p><span id="day1-temp"></span></p>
+                        <p id="day1-caption"></p>
+                        <img id="day1-icon" src="" alt=""> 
+                    </div>
+                    
+                    <div class="day2">
+                        <p id="day2"></p>
+                        <p><span id="day2-temp"></span></p>
+                        <p id="day2-caption"></p>
+                        <img id="day2-icon" src="" alt=""> 
+                    </div>
+                    
+                    <div class="day3">
+                        <p id="day3"></p>
+                        <p><span id="day3-temp"></span></p>
+                        <p id="day3-caption"></p>
+                        <img id="day3-icon" src="" alt=""> 
+                    </div>
+                     
+                </div>
             </div>
            
         </div>
         <section id="spotlights">
-            <div class="card1">
-                <h2>Barber Shop</h2>
-                <p>barbershop@gmail.com</p>
-                <p>999-999-9999</p>
-                <p>barbershop.com</p>
-            </div>
-            <div class="card2">
-                <h2>Landscaping</h2>
-                <p>landscaping@gmail.com</p>
-                <p>999-999-9999</p>
-                <p>landscamping.com</p>
-            </div>
-            <div class="card3">
-                <h2>Lawyer's associates</h2>
-                <p>advocacy@gmail.com</p>
-                <p>999-999-9999</p>
-                <p>advocacy.com</p>
-            </div>
         </section>
     </main>
 
@@ -109,7 +139,8 @@
         <p><span>&copy;</span> <span id="y"></span> - Jacqueline Bento - Florida  ▪ WDD 230 Project ▪ <span id="lastModified"></span> </p>
     </footer>
   <script src="scripts/getDates.js"></script>
-  
+  <script src="scripts/weather.js"></script>
   <script src="scripts/hambMenu.js"></script>  
+  <script src="scripts/spotlights.js"></script> 
 </body>
 </html>
