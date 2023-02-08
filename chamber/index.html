@@ -42,7 +42,6 @@
                 <li class="nav-item">
                     <a href="join.html" class="nav-link">Join</a>
                 </li>
-                <!-- <button class="darkButton">Dark Mode ☑️</button> -->
             </ul>
         
                 <div class="hamburger">
@@ -62,7 +61,7 @@
         </div>
 
         <div id="hero">
-            <img id="hero-img" src="images/hero.jpg" alt="Orange Park Town Hall">
+            <img id="hero-img" src="images/hero.webp" alt="Orange Park Town Hall" loading="lazy" width="700">
             <a class="join" href="join.html">Join the Chamber</a>
         </div>
 
@@ -84,6 +83,9 @@
                 <br>
                 <h3>Three Rivers Council Wake Up on the Westside Social</h3>
                 <p>May 13 at 6:00pm</p>
+                <h3>End of quarter meeting</h3>
+                <br>
+                <p>TBA</p>
                     
 
             </div>
@@ -95,8 +97,8 @@
                 <div id="weatherCard">
                     
                     <p><span id="current-temp"></span></p>
-                    <figcaption></figcaption>
-                    <img id="weather-icon" src="" alt="">  
+                    <p id="caption"></p>
+                    <img id="weather-icon" src="." alt=".">  
                     
                 </div>
                 <hr>
@@ -107,29 +109,28 @@
                         <p id="day1"></p>
                         <p><span id="day1-temp"></span></p>
                         <p id="day1-caption"></p>
-                        <img id="day1-icon" src="" alt=""> 
+                        <img id="day1-icon" src="." alt="."> 
                     </div>
                     
                     <div class="day2">
                         <p id="day2"></p>
                         <p><span id="day2-temp"></span></p>
                         <p id="day2-caption"></p>
-                        <img id="day2-icon" src="" alt=""> 
+                        <img id="day2-icon" src="." alt="."> 
                     </div>
                     
                     <div class="day3">
                         <p id="day3"></p>
                         <p><span id="day3-temp"></span></p>
                         <p id="day3-caption"></p>
-                        <img id="day3-icon" src="" alt=""> 
+                        <img id="day3-icon" src="." alt="."> 
                     </div>
                      
                 </div>
             </div>
            
         </div>
-        <section id="spotlights">
-        </section>
+        <div id="spotlights"></div>
     </main>
 
     <footer>
@@ -142,5 +143,8 @@
   <script src="scripts/weather.js"></script>
   <script src="scripts/hambMenu.js"></script>  
   <script src="scripts/spotlights.js"></script> 
+  <script src="scripts/forecast.js"></script> 
+  <script src="scripts/banner.js"></script> 
+  
 </body>
 </html>
