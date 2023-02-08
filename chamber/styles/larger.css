@@ -56,6 +56,7 @@
     
       .join{
         background-color: #9fe2c6;
+        width: 180px;
         text-decoration: none;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 900;
@@ -74,7 +75,7 @@
     main{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 30px 680px 1fr 340px 300px;
+      grid-template-rows: 30px 1fr 530px 340px 300px;
     }
 
     .banner{
